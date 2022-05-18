@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'text_styles.dart';
 import 'styled_button.dart';
+import 'about.dart';
 
 class Score extends StatelessWidget {
   const Score(
@@ -59,7 +60,10 @@ class Score extends StatelessWidget {
         ),
         StyledButton(
           icon: Icons.info,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: ((context) => const AboutPage())));
+          },
         ),
       ],
     );
